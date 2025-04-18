@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Park Tennis Court Status</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <meta name="description" content="Check the current status of Central Park Tennis Courts">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Central Park Tennis Courts</h1>
+            <h2>Current Status</h2>
+        </header>
+        
+        <main>
+            <div class="status-card">
+                <div id="status-indicator" class="status-indicator">
+                    <div class="spinner"></div>
+                </div>
+                <h2 id="status-heading">Checking court status...</h2>
+                <p id="status-message">Please wait while we retrieve the latest information.</p>
+                <p id="status-details" class="details"></p>
+                <p id="last-updated" class="last-updated"></p>
+            </div>
+            
+            <div class="refresh-container">
+                <button id="refresh-button" class="refresh-button">
+                    <i class="fas fa-sync-alt"></i> Refresh
+                </button>
+            </div>
+        </main>
+        
+        <footer>
+            <p>This service checks the official Central Park Tennis Center information line automatically.</p>
+            <p>Last updated: <span id="page-updated-time">Just now</span></p>
+            <div class="disclaimer">
+                <p><strong>DISCLAIMER:</strong> All court status information is subject to change and is set by the Central Park Tennis Center. This website is not affiliated with, endorsed by, or operated by the Central Park Tennis Center or NYC Parks Department.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
